@@ -1,0 +1,41 @@
+header {
+  background: $neutral-100;
+  position:sticky;
+  top: 0;
+  z-index: 2;
+  border-bottom:1px solid $neutral-300;
+  nav {
+    height: $space-xl;
+    .wordmark {
+      font-family: $family-display;
+      font-weight: $font-bold;
+      font-size: $text-3xl;
+      line-height: $leading-sm;
+      letter-spacing: $tracking-base;
+      text-decoration: none;
+      color: $neutral-900;
+      .wordmark-bug {
+        padding-right: $space-2xs;
+        font-size: 2.4rem;
+        padding-top:4px;
+      }
+    }
+    @include breakpoint-sm {
+      height: 60px;
+      .button-base {
+        padding: 8px 15px 10px 15px;
+      }
+      .brand svg {
+        height: 20px;
+      }
+    }
+  }
+  .button-base.header-action.js-position {
+    opacity: 0;
+    margin-top:-20px;
+  }
+  .header-action.scrolled {
+    opacity: 1;
+    margin-top:0px;
+  }
+}

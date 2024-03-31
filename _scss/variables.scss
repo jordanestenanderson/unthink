@@ -1,0 +1,109 @@
+/****WRAPPER*****/
+$wrapper-xs: 680px;
+$wrapper-sm: 944px;
+$wrapper-md: 1200px;
+$wrapper-lg: 1800px;
+
+/****BREAKPOINTS*****/
+$breakpoint-sm: 540px;
+$breakpoint-md: 768px;
+
+/****SPACE*****/
+$space-4xs: 2px;
+$space-3xs: 4px;
+$space-2xs: $space-3xs * 2; /*8px*/
+$space-xs: $space-3xs * 4; /*16px*/
+$space-sm: $space-3xs * 6; /*24px*/
+$space-md: $space-3xs * 8; /*32px*/
+$space-lg: $space-3xs * 12; /*48px*/
+$space-xl: $space-3xs * 20; /*80px*/
+$space-2xl: $space-3xs * 28; /*112px*/
+$space-3xl: $space-3xs * 40; /*160px*/
+$space-4xl: $space-3xs * 72; /*288px*/
+
+/****COLORS*****/
+$blue: #fa8708;
+$purple: #7433FF;
+$gradient: linear-gradient(237.95deg, #e26306 0%, #fa8708 100%);
+$alert: linear-gradient(225deg, #FF5A5A 0%, #E12267 100%);
+
+$neutral-900: #2D2B2A;
+$neutral-800: #443F3C;
+$neutral-700: #554F4B;
+$neutral-600: #847D78;
+$neutral-500: #A69D97;
+$neutral-400: #E6DEDA;
+$neutral-300: #EBE7E4;
+$neutral-200: #F5F1EF;
+$neutral-100: #FFFFFF;
+
+$error-800: #8F0526;
+$error-700: #E00B3E;
+$error-300: #FFE3E9;
+
+$success-800: #064E3B;
+$success-700: #10B981;
+$success-300: #D1FAE5;
+
+$warning-800: #78350F;
+$warning-700: #F59E0B;
+$warning-300: #FEF3C7;
+
+$info-800: #0C4A6E;
+$info-700: #0EA5E9;
+$info-300: #E0F2FE;
+
+/****SHADOWS*****/
+$shadow-sm: 0px 1px 2px -1px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.08);
+$shadow-md: 0px 2px 4px -2px rgba(0, 0, 0, 0.04), 0px 4px 6px -1px rgba(0, 0, 0, 0.04);
+$shadow-lg: 0px 4px 6px -4px rgba(0, 0, 0, 0.04), 0px 10px 15px -3px rgba(0, 0, 0, 0.04);
+$shadow-xl: 0px 8px 10px -6px rgba(0, 0, 0, 0.04), 0px 20px 25px -5px rgba(0, 0, 0, 0.04);
+
+/****OPACITY*****/
+$opacity-0: 0;
+$opacity-20: 0.2;
+$opacity-40: 0.4;
+$opacity-60: 0.6;
+$opacity-80: 0.8;
+$opacity-100: 1;
+
+/****BORDER RADIUS*****/
+$border-radius-sm: 4px;
+$border-radius-md: 8px;
+$border-radius-lg: 16px;
+$border-radius-xl: 80px;
+
+/****FONT FAMILY*****/
+$family-display: "Degular", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+$family-base: "San Francisco", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+
+/****FONT WEIGHT*****/
+$font-light: 300;
+$font-base: 400;
+$font-medium: 500;
+$font-semibold: 600;
+$font-bold: 700;
+$font-black: 800;
+
+/****FONT SIZE*****/
+$text-2xs: 0.625rem;
+$text-xs: 0.75rem;
+$text-sm: 0.875rem;
+$text-base: 1rem;
+$text-lg: 1.25rem;
+$text-xl: 1.5rem;
+$text-2xl: 2rem;
+$text-3xl: 2.5rem;
+$text-4xl: 3rem;
+$text-5xl: 3.5rem;
+
+/****FONT LEADING*****/
+$leading-sm: 110%;
+$leading-base: 125%;
+$leading-lg: 150%;
+
+/****FONT TRACKING*****/
+$tracking-base: 0px;
+$tracking-lg: 0.2px;
+$tracking-xl: 0.4px;
+$tracking-2xl: 1.2px;

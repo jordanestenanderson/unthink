@@ -1,0 +1,25 @@
+# Site settings
+title:              Fluentfox
+email:              jordan@esten.co
+description:        "Practice the tricky vocab and verb forms that you’re not so good at... yet."
+# url:                "https://jordanestenanderson.github.io/fluentfox.github.io/"
+# baseurl:            /main
+baseurl:
+
+# File structure settings
+image_path:         /public/images
+
+# Build settings
+markdown:           kramdown
+permalink:          pretty
+
+# Collection definitions and settings
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
+
+# Sass
+sass:
+  sass_dir:          _scss
+  style:            :compressed

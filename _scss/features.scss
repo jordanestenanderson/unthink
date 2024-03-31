@@ -1,0 +1,61 @@
+.features {
+	background: $neutral-300;
+	.features-intro {
+		max-width:680px;
+		margin: 0 auto $space-xl auto;
+		padding-top: $space-xl;
+		justify-content: center;
+		text-align: center;
+		h2 {
+			max-width:540px;
+			margin: 0 auto;
+		}
+		@include breakpoint-md {
+		  	max-width:460px;
+		  	padding-top: $space-lg;
+		}
+	}
+	.fitted-background {
+		border-radius: 0px;
+	}
+	.grid {
+		padding-bottom: $space-xl;
+		.feature-card {
+			.feature-icon {
+				margin-top: -40px;
+				svg {
+					margin: 0 auto;
+					display: block;
+					width: $space-xl;
+					height: $space-xl;
+				}
+			}
+			background: $neutral-100;
+			border-radius: $border-radius-md;
+			position: relative;
+			z-index: 1;
+			box-shadow: $shadow-lg;
+			h3 {
+				margin: 0px;
+				padding: $space-xs $space-sm 0 $space-sm;
+				border-radius: $border-radius-md $border-radius-md 0 0;
+				text-align: center;
+			}
+			.feature-list {
+				padding: 0 $space-sm $space-sm $space-sm;
+				text-align: center;
+				p {
+					margin-top: $space-sm;
+				}
+			}
+			@include breakpoint-md {
+				width:100%;
+			  	max-width:400px;
+			  	margin:0 auto;
+			}
+		}
+		@include breakpoint-md {
+		  grid-gap: 64px;
+		}
+	}
+}

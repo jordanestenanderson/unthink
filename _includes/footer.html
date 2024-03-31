@@ -1,0 +1,35 @@
+<div class="cta container-sm" id="waitlist">
+    <div class="wrapper-md grid gap-lg cta-row">
+        <div class="cta-graphic flex align-center justify-center index">
+            <img class="cta-graphic-img cta-graphic-img-one" src="{{ site.baseurl }}/assets/main/app-one.jpg" alt="Screenshot showing somebody having a Spanish lesson in the Fluentfox app" />
+            <img class="cta-graphic-img cta-graphic-img-two" src="{{ site.baseurl }}/assets/main/app-three.jpg" alt="Screenshot showing somebody having a Spanish lesson in the Fluentfox app" />
+        </div>
+        <div class="cta-content index">
+            <h2 class="title-3xl">Get 3 months free by joining the waitlist</h2>
+            <p class="body-lg grey">Offer expires <span id="tomDate"></span>. No credit card needed.</p>
+            <form id="signup-form" method="POST" action="https://script.google.com/macros/s/AKfycbwNpTbdywK_1QqMiSS_PFkPxp8quB2BoHJCBEOqC8tREO-_RapM-UivcbuRNK2S-MG5hA/exec"
+            >
+                <label class="body-sm grey" for="email-field">Email</label>
+                <input id="email-field" class="form-input input-space" name="Email" type="email" autocomplete="off" required>
+                <label class="body-sm grey" for="phone-field">Phone Number <span>(optional)</span></label>
+                <input id="phone-field" class="form-input" name="Phone Number" type="tel">
+                <button class="button-lg" id="signup-form-button" type="submit">
+                  <span class="button-text">Join waitlist</span>
+                  <img class="button-loader" src="{{ site.baseurl }}/assets/main/loader.gif" alt="loading gif animation" />
+                </button>
+
+              <div id="status"><div id="status-text"></div></div>
+            </form>
+        </div>
+    </div>
+</div>
+<footer class="footer-bottom">
+  <div class="wrapper-md flex align-center justify-between flex-grow">
+    <p class="body-base align-right">Fluentfox &copy; <span id="year"></span></p>
+    <p class="body-base align-right"><a class="inverse" href="{{ site.baseurl }}/privacy">Privacy Policy</a></p>
+  </div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+<script src="{{ site.baseurl }}/js/form.js" type="text/javascript"></script>
+<script src="{{ site.baseurl }}/js/base.js" type="text/javascript"></script>

@@ -1,0 +1,99 @@
+---
+layout: main
+metatitle: Fluentfox
+sharetitle: Level up your Spanish with fun, real world chats
+metadescription: Practice the tricky vocab and verb forms that you’re not so good at... yet.
+metaimg: meta.jpg
+
+herotitle: Level up your Spanish with fun, real world chats that focus on your weak spots
+herodescription: Fluentfox helps you improve your Spanish with fun chats about your favorite things, nudging you to use the tricky vocab and verb forms that you’re not so good at... yet.
+mobileimg1: app-one.jpg
+mobileimg2: app-two.jpg
+mobileimg3: app-three.jpg
+
+featurestitle: Created by language learners, powered by AI
+featuressubtitle: Take a leap towards Spanish fluency by learning at the edge of your abilities.
+featuresonetitle: Engaging</br>conversations
+featuresoneitem: Have a conversation role playing meeting a local in the Caribbean, or discuss history and politics. Learn new vocabulary in memorable situations.
+featurestwotitle: Tailored</br>challenges
+featurestwoitem: We use AI to dynamically adjust the difficulty of conversations and push you to practice what you’re not good at, like those pesky verb conjugations.
+featuresthreetitle: Uncomplicated</br>feedback
+featuresthreeitem: Instant, personalized feedback helps you understand mistakes and learn from them. Turn every conversation you have into a valuable lesson.
+
+---
+<div class="content">
+    <!-------Hero------->
+    <div>
+        <div class="hero">
+            <div class="wrapper-md centered">
+                <div class="hero-content-container">
+                    <h1 class="title-5xl">
+                        {{ page.herotitle }}
+                    </h1>
+                    <p class="hero-description body-xl grey">{{ page.herodescription }}</p>
+                    <a class="button-lg" href="#waitlist">
+                        <span>Join waitlist</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="graphics">
+        <div class="graphics-background"></div>
+        <div class="wrapper-md index">
+            <div class="grid grid-third gap-lg hero-graphic-container">
+                <img class="hero-graphic-image" src="{{ site.baseurl }}/assets/main/{{ page.mobileimg1 }}" alt="Screenshot showing somebody having a Spanish lesson in the Fluentfox app" />
+                <img class="hero-graphic-image" src="{{ site.baseurl }}/assets/main/{{ page.mobileimg2 }}" alt="Screenshot showing somebody having a Spanish lesson in the Fluentfox app" />
+                <img class="hero-graphic-image" src="{{ site.baseurl }}/assets/main/{{ page.mobileimg3 }}" alt="Screenshot showing somebody having a Spanish lesson in the Fluentfox app" />
+            </div>
+        </div>
+    </div>
+    <!-------Features------->
+    <div class="features">
+        <div class="wrapper-md index">
+            <div class="features-intro">
+                <h2 class="title-3xl">{{ page.featurestitle }}</h2>
+                <p class="body-lg">{{ page.featuressubtitle }}</p>
+            </div>
+            <div class="grid grid-third gap-lg">
+                <div class="feature-card">
+                    <div class="feature-icon">{% include intimate.html %}</div>
+                    <h3 class="title-2xl">{{ page.featuresonetitle }}</h3>
+                    <div class="feature-list">
+                        <p class="flex-grow body-base">{{ page.featuresoneitem }}</p>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">{% include support.html %}</div>
+                    <h3 class="title-2xl">{{ page.featurestwotitle }}</h3>
+                    <div class="feature-list">
+                        <p class="flex-grow body-base">{{ page.featurestwoitem }}</p>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">{% include flexible.html %}</div>
+                    <h3 class="title-2xl">{{ page.featuresthreetitle }}</h3>
+                    <div class="feature-list">
+                        <p class="flex-grow body-base">{{ page.featuresthreeitem }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% include footer.html %}
+    </div>
+</div>
+<style>.button-base.header-action {opacity: 0;}</style>
+<script>
+    $(document).ready(function() {
+        $(".header-action").addClass("js-position");
+        $(window).scroll(function() {
+          if ($(document).scrollTop() > 500) {
+            $('.header-action').addClass('scrolled').removeClass('js-position');
+          }
+          else {
+            $('.header-action').removeClass('scrolled').addClass('js-position');
+          }
+        });
+      });
+</script>
